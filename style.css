@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1.2rem;}
+.list{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    list-style: none;
+    gap: 10px;
+    background-color: rgb(112, 116, 173);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+.logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 10%;
+    margin-right: 40vw;
+    margin-left: 20px;
+}
+.items a{
+    font-size: 18px;
+    color: rgb(238, 236, 253);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+
+}
+.btn{
+    padding: 10px 20px;
+    background-color: rgb(244, 243, 252);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 20px;
+}
+main{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+.container-herosection{
+    
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    gap: 20px;
+    background:linear-gradient(to right,#b32f7c,#5879d6);
+}
+.left{
+    flex-basis: 40%;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'fantasy', 'fangsong', cursive;
+}
+.btn{
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: #d455c3;
+    color: white;
+}
+.right{
+    flex-basis: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1.2fr);
+    gap: 5px;
+}
+.child-imgs{
+    color: rgb(53, 7, 221);
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: end;
+    min-height: 200px;
+    background-color: #0000002b;
+    background-blend-mode: hard-light;
+}
+#box-3{
+    grid-row: span 2;
+ background-position: center;
+}
+#box-5{
+    grid-column: span 2;
+    background-position: center;
+}
+@media(orientation: portrait)
+{
+    .container-herosection{
+        flex-direction: column;
+        text-align: center;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+   .logo{
+    margin-right: 10vw;
+    margin-left: 0px;
+   }
+   .items a{
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 10px;
+   }
+   .button{
+    margin-left: 8px
+   }
+}
